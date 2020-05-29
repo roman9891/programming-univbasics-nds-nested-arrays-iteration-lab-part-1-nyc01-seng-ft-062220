@@ -5,9 +5,9 @@ def find_even_values(src)
   i = 0
   evens = []
   
-  while src[i] do 
+  while i < src.count do 
     j = 0 
-    while src[i][j] do 
+    while j < src[i].count do 
       if src[i][j] % 2 == 0 
         evens << src[i][j]
       end 
