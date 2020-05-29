@@ -2,18 +2,18 @@ def find_even_values(src)
   # Given an Array of Arrays of Integers ( [ [10, 11], [99, 50, 3, 4], [23, 41] ] ):
   #
   # Output all even values in each nested array
-  i = 0
-  evens = []
+  row_index = 0
+  results = []
   
-  while i < src.count do 
-    j = 0 
-    while j < src[i].count do 
-      if src[i][j] % 2 == 0 
-        evens << src[i][j]
+  while row_index < src.count do 
+    element_index = 0 
+    while j < src[row_index].count do 
+      if src[row_index][element_index] % 2 == 0 
+        evens << src[row_index][element_index]
       end 
-      j += 1
+      element_index += 1
     end
-    i += 1
+    row_index += 1
   end
-  puts evens
+  puts results
 end
