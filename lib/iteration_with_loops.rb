@@ -15,5 +15,5 @@ def find_even_values(src)
     end
     i += 1
   end
-  evens
+  puts evens
 end
